@@ -1,0 +1,164 @@
+* {
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;}
+
+nav{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#Nav-Sup{
+    padding: 0.5vh 1vw 0.5vh 0.5vw;
+    font-size: 0.8rem;
+    background-color:#b5822b;
+    color: #e9ddca;
+    font-family: "didact-gothic", sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    z-index: 10;
+    box-shadow: 0 8px 10px 5px rgba(107, 107, 107, 0.201);
+    /*box-shadow: 3px 4px 5px 6px #000;*/
+}
+#Nav-Sup p{
+    margin: 0;
+}
+#Nav-Centro{
+    width: 100vw;
+    height: 10vh;
+    background-color: #b5822b;
+    background-image: url(./img/Encabezado.jpg);
+}
+#Nav-Inf{
+    height: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, white,#FFF7EC, #FFF7EC);
+    box-shadow: 0 8px 10px 5px rgba(107, 107, 107, 0.201);
+}
+#Nav-Inf-Iz{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#Nav-Inf-De{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 5vhpx;        
+    gap: 15px; 
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #6e3b0c;
+}
+#Nav-Inf-De a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+}
+#Nav-Inf h2{
+    font-size: 1.25rem;
+    margin:0;
+    font-family: "Cinzel", sans-serif;
+    background: radial-gradient(circle at center, #cea243,#976114);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(107, 107, 107, 0.4);
+}
+#Nav-Inf img{
+    border-radius: 50%;
+    margin: 0;
+    padding: 0;
+    width: 8rem;
+    height: 8rem;
+    z-index: auto;
+    box-shadow: 0px 0px 10px 2px rgba(77, 77, 77, 0.3);
+}
+.fondo1 img {
+    display: block;
+    top: 40px;
+    width: 100%;
+    height: 1100px;
+    object-fit: cover;
+    /* Mantiene la proporción sin deformarse */}
+.forma-redondo {
+    background-color: white;
+    position: absolute;
+    /* Saca el texto del flujo normal */
+    top: 1000px;
+    /* Centra o ubica verticalmente */
+    left: 308px;
+    /* Centra o ubica horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta el centro exacto */}
+.curso-emprendimiento {
+    left: 400px;
+    top: 1280px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border: solid black 2px;
+    background-color: #b5822b;
+    color: white;
+    position: absolute;
+    height: 40px;
+    width: 190px;}
+.fondo2 img {
+    display: block;
+    width: 100%;
+    height: 1182px;
+    object-fit: cover;
+    /* Mantiene la proporción sin deformarse */}
+.text-ce {
+    text-align: center;}
+#text2 {
+    position: absolute;
+    /* Saca el texto del flujo normal */
+    top: 1443px;
+    /* Centra o ubica verticalmente */
+    left: 50%;
+    /* Centra o ubica horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta el centro exacto */
+    color: white;
+    padding: 10px 20px;}
+.Imagen{
+    width: 100%;
+    height: 180px;
+    background-color: #cceeff;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagen{
+    top: 1700px;
+    height: 1000px;
+    width: 300px;
+    object-fit: cover;
+}
+#text3 {
+    position: absolute;
+    /* Saca el texto del flujo normal */
+    top: 2346px;
+    /* Centra o ubica verticalmente */
+    left: 50%;
+    /* Centra o ubica horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta el centro exacto */
+    color: white;
+    padding: 10px 20px;}
+.img {
+    align-items: center;}
+.tabla {
+    color: black;
+    background-color: white;}
+.fondo3 {
+    background-color: blueviolet;}
