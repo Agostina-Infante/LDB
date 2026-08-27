@@ -1,0 +1,95 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*Navegador*/
+
+nav{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#Nav-Sup{
+    padding: 0.5vh 1vw 0.5vh 0.5vw;
+    font-size: 0.8rem;
+    background-color:#b5822b;
+    color: #e9ddca;
+    font-family: "didact-gothic", sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    z-index: 10;
+    box-shadow: 0 8px 10px 5px rgba(107, 107, 107, 0.201);
+    /*box-shadow: 3px 4px 5px 6px #000;*/
+}
+#Nav-Sup p{
+    margin: 0;
+}
+#Nav-Centro{
+    width: 100vw;
+    height: 10vh;
+    background-color: #b5822b;
+    background-image: url(../img/background-nav.jpg);
+}
+#Nav-Inf{
+    height: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, white,#FFF7EC, #FFF7EC);
+    box-shadow: 0 8px 10px 5px rgba(107, 107, 107, 0.201);
+}
+#Nav-Inf-Iz{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#Nav-Inf-De{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 5vhpx;        
+    gap: 15px; 
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #6e3b0c;
+}
+#Nav-Inf-De a{
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: inherit;
+}
+#Nav-Inf h2{
+    font-size: 1.25rem;
+    margin:0;
+    font-family: "Cinzel", sans-serif;
+    background: radial-gradient(circle at center, #cea243,#976114);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(107, 107, 107, 0.4);
+}
+#Nav-Inf img{
+    border-radius: 50%;
+    padding: 0;
+    margin:0;
+    height: 7rem;
+    z-index: auto;
+    box-shadow: 0px 0px 10px 2px rgba(77, 77, 77, 0.3);
+}
+
+/*Body*/
+
+/*Footer*/
+
+footer{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    color: white;
+}
