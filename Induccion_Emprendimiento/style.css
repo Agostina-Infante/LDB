@@ -1,0 +1,287 @@
+/* Base y Reset */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;}
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;}
+#Nav-Sup {
+    padding: 0.5vh 2vw;
+    font-size: 0.8rem;
+    background-color: #b5822b;
+    color: #e9ddca;
+    font-family: "didact-gothic", sans-serif;
+    text-align: right;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);}
+#Nav-Centro {
+    width: 100%;
+    height: 10vh;
+    background: #b5822b url('./img/Encabezado.jpg') center/cover no-repeat;}
+#Nav-Inf {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #FFF7EC);}
+#Nav-Inf-Iz {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 9rem;}
+#Nav-Inf img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    z-index: 20;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);}
+#Nav-Inf h2 {
+    font-size: 1.25rem;
+    font-family: "Cinzel", serif;
+    background: linear-gradient(135deg, #cea243, #976114);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;}
+#Nav-Inf-De {
+    list-style: none;
+    display: flex;
+    gap: 20px;}
+#Nav-Inf-De a {
+    text-decoration: none;
+    color: #6e3b0c;
+    font-weight: bold;
+    font-size: 0.9rem;}
+/* SECCIÓN 1: HERO (Fondo 1) */
+.hero-section {
+    position: relative;
+    min-height: 85vh;
+    background: url('./img/fondo1.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 4rem 10%;}
+.tarjeta-redondeada {
+    background-color: #fff7ec;
+    color: #333;
+    padding: 2.5rem;
+    max-width: 450px;
+    border-radius: 40px 0px 40px 0px; /* Esquinas de estilo curva moderna */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);}
+.Boton-01 {
+    margin-top: 1.5rem;
+    padding: 0.6rem 2rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;}
+/* SECCIÓN 2: CURSO (Fondo Oscuro) */
+.curso-section {
+    position: relative;
+    background: url('./img/Fondo2.jpg') center/cover no-repeat;
+    padding: 0 15% 4rem 15%; /* Quitamos padding superior para alinear el cartel arriba */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;}
+/* CARTEL SUPERIOR "CURSO DE EMPRENDIMIENTO" */
+.badge-curso {
+    transform: translateY(-50%); /* Sube la mitad de su tamaño sobre el borde superior */
+    background-color: #cea243;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.6rem 2rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);}
+.contenedor-bloques {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;}
+.bloque-texto {
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;}
+/* CONTENEDOR DE MODALIDAD (ABAJO) */
+.modalidad-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -6.5rem; /* Empuja el contenedor hacia abajo sobre la siguiente sección */
+    z-index: 10;}
+.modalidad-container h3 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 1.5rem;
+    text-align: center;}
+.modalidad-opciones {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;}
+.opcion {
+    flex: 1;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    font-size: 0.95rem;
+    font-family: 'Open Sans', sans-serif;}
+.opcion:first-child {
+    border-right: 1px solid #e0e0e0;}
+/* SECCIÓN 3: COMPENSACIÓN DE ESPACIO */
+.info-section {
+    background: url('./img/fondo3.png') center/cover no-repeat;
+    padding: 10rem 10% 5rem 10%; /* Subimos a 10rem para alejarlo de la barra blanca */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;}
+.card-info-clave {
+    background: #ffffff;
+    color: #333;
+    width: 100%;
+    max-width: 650px;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);}
+.card-info-clave h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    color: #4a2c0f;}
+/* Agrega esta clase al contenedor de los 4 ítems dentro de card-info-clave */
+.grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 15px;}
+.grid-info div {
+    background: linear-gradient(135deg, #e6c885, #b5822b);
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);}
+/* SECCIÓN 3: INFORMACIÓN Y CONTACTO */
+.info-section {
+    background: url('./img/fondo3.png') center/cover no-repeat;
+    padding: 10rem 10% 5rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;}
+/* LÍNEAS DIVISORIAS */
+.divisor-dorado {
+    width: 100%;
+    max-width: 700px;
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #ffffff, transparent);
+    opacity: 0.5;
+    margin: 1rem 0;}
+/* EXPERIENCIA PERSONAL */
+.experiencia-personal {
+    background-color: #000;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ffffff;}
+.experiencia-personal h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);}
+.exp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: left;}
+.exp-grid img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);}
+.exp-grid p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);}
+/* DIRECCIÓN Y SOCIOS */
+.direccion-socios-card {
+    width: 700px;
+    height: auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #fff7ec;
+    color: #333;
+    padding: 2.5rem;
+    border-radius: 40px 0px 40px 0px; /* Esquinas de estilo curva moderna */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);}
+.direccion-socios-card h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;}
+.socio-item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+    backdrop-filter: blur(4px);}
+.foto-socio {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #d1a145;
+    border: 2px solid #ffffff;
+    flex-shrink: 0;}
+.datos-socio strong {
+    display: block;
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 0.2rem;}
+.datos-socio p {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;}
+/* ADAPTACIÓN A PANTALLAS PEQUEÑAS (MÓVILES) */
+@media (max-width: 600px) {
+    .exp-grid {
+        grid-template-columns: 1fr;
+    }}
