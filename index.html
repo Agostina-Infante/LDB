@@ -1,91 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio | Leones de la Bahía</title>
     <link rel="stylesheet" href="./css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Didact+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-           <div id="Nav-Sup">
-            <p>Bahía Blanca, Buenos Aires, Argentina | Est. 2018</p>
-           </div> 
-           <div id="Nav-Centro">
-            <img src="" alt="">
-           </div>
-           <div id="Nav-Inf">
-            <div id="Nav-Inf-Iz">
-                <img src="./img/Adobe Express - file.png" alt="">
-                <h2 class="Nombre-Empresa">Leones de la Bahía</h1>
+            <div id="Nav-Sup">
+                <p>Bahía Blanca, Buenos Aires, Argentina | Est. 2018</p>
+            </div> 
+            <div id="Nav-Centro"></div>
+            <div id="Nav-Inf">
+                <div id="Nav-Inf-Iz">
+                    <img src="./img/Adobe Express - file.png" alt="Logo Leones de la Bahía">
+                    <h2 class="Nombre-Empresa">Leones de la Bahía</h2>
+                </div>
+                <div id="Nav-Inf-De">
+                    <ul>
+                        <li><a class="Nav-Opcion" id="Link-Inicio" href="#">Inicio</a></li>
+                        <li><a class="Nav-Opcion" id="Link-Nosotros" href="./index.html">Nosotros</a></li>
+                        <li><a class="Nav-Opcion" id="Link-Contacto" href="#Contactos">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-            <div id="Nav-Inf-De">
-                <li><a class="Nav-Opcion" id="Link-Inicio" href="">Inicio</a></li>
-                <li><a class="Nav-Opcion" id="Link-Nosotros" href="./index.html">Nosotros</a></li>
-                <li><a class="Nav-Opcion" id="Link-Contacto" href="#Contactos">Contacto</a></li>
-            </div>
-           </div>
         </nav>
     </header>
+
     <main>
-        <div id="Main-Introduccion">
-            <img id="WhiteBlob" src="./img/WhiteBlob (1).png" alt="">
+        <section id="Main-Introduccion">
             <div id="Contenedor-Biografia">
                 <h1>Leones de la Bahía</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis perferendis earum nemo quam minus vitae quas quibusdam animi voluptatum. Rerum quasi vel deserunt eligendi delectus atque totam exercitationem explicabo repudiandae.</p>
+                <p>Como Leones de la Bahía, nos enfocamos en ofrecerte el universo de productos Royal Prestige a través de un canal exclusivo, marcando la diferencia respecto al comercio minorista tradicional. Al ser distribuidores autorizados independientes, llevamos la experiencia directamente a tu hogar mediante demostraciones culinarias gratuitas y personalizadas. Durante estos encuentros, nos dedicamos a mostrarte de manera práctica la alta tecnología, las ventajas y el funcionamiento real de cada pieza, asegurando que conozcas de primera mano cómo nuestras soluciones pueden transformar tu forma de cocinar y elevar el bienestar de tu familia.</p>
             </div>
-            <img class="Intro-Img" id="Img1" src="./img/Img1.jpg" alt="">
-            <img class="Intro-Img" id="Img2" src="./img/Img2.jpg" alt="">
-            <img class="Intro-Img" id="Img3" src="./img/Img3.jpg" alt="">
-        </div>
-        <div id="Main-Medio">
-            <hr>
+            <div id="Contenedor-Galeria">
+                <img class="Intro-Img" id="Img1" src="./img/Img1.jpg" alt="Demostración culinaria 1">
+                <img class="Intro-Img" id="Img2" src="./img/Img2.jpg" alt="Demostración culinaria 2">
+                <img class="Intro-Img" id="Img3" src="./img/Img3.jpg" alt="Demostración culinaria 3">
+            </div>
+        </section>
+        <section id="Main-Medio">
+            <hr class="divider">
             <h3>Nuestra misión y visión</h3>
+            
             <div id="MisionVision">
-                <p class="MV-P" id="Mision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum debitis excepturi quae delectus ut libero quas est esse veritatis exercitationem cum nesciunt omnis ea dolores, ipsum doloremque reprehenderit explicabo ratione?</p>
-                <img class="MV-Img" id="M-Img" src="./img/Img1.jpg" alt="">
-                <img class="MV-Img" id="V-Img" src="./img/Img2.jpg" alt="">
-                <p  class="MV-P" id="Vision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus repellendus natus reprehenderit suscipit molestiae, necessitatibus debitis consequatur veniam nesciunt quos! Enim veritatis ex provident, debitis quas eveniet! Officiis, inventore aliquid?</p>
+                <article id="Mision">
+                    <h4>Misión</h4>
+                    <p class="MV-P">Inspirar, capacitar y acompañar a nuestros socios para que desarrollen un negocio sólido y altamente rentable. Nos comprometemos a brindar las herramientas, la mentoría y la comunidad necesarias para que crezcan como líderes íntegros, transformen radicalmente su calidad de vida y generen un impacto positivo y duradero en la vida de miles de personas.</p>
+                </article>
+                <img class="MV-Img" id="M-Img" src="./img/Adobe Express - file.png" alt="Misión LDB">
+                <img class="MV-Img" id="V-Img" src="./img/ImgV(1).jpg" alt="Visión LDB">
+                <article id="Vision">
+                    <h4>Visión</h4>
+                    <p class="MV-P">Convertirnos en la organización de emprendedores más influyente de Argentina, formando líderes extraordinarios capaces de transformar la realidad económica y social del país. Nos proyectamos como una comunidad en constante expansión que inspira, capacita e impulsa a las personas a desarrollar su máximo potencial, generando un impacto positivo en miles de vidas. A través de la innovación, el trabajo colaborativo y la cultura del esfuerzo, buscamos ser el motor que active nuevas oportunidades de negocio, promoviendo el crecimiento colectivo y construyendo un camino sostenible hacia la prosperidad y la verdadera libertad financiera y personal.</p>
+                </article>
             </div>
-            <h3>Línea de tiempo</h3>
-            <div id="LineaTiempo">
 
-            </div>
-            <h3>¿Donde nos encontramos?</h3>
+            <h3>¿Dónde nos encontramos?</h3>
             <div class="image-viewport" id="viewport">
-                <a href="https://share.google/cA9hsk7RvkYzIzM8v"></a> <img src="../LDB/img/Maps.png" id="targetImage" alt="Sliding image preview">
+                <a href="https://share.google/cA9hsk7RvkYzIzM8v" target="_blank" rel="noopener">
+                    <img src="./img/Maps.png" id="targetImage" alt="Vista de ubicación en Google Maps">
+                </a>
             </div>
-        </div>
-        <div id="Main-Ultimo">
+        </section>
+
+        <section id="Main-Ultimo">
             <div id="Eventos">
-                <h3>Eventos de la UNS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aut omnis magnam itaque provident, culpa perferendis voluptate tenetur perspiciatis incidunt optio in explicabo nam. Omnis nihil tenetur eligendi distinctio perspiciatis!</p>
+                <h3>Participación de LDB</h3>
+                <p>En todo el sudoeste bonaerense existen importantes espacios donde la producción, el trabajo y el talento local se encuentran. Eventos referentes como la Muestra Comercial e Industrial de la Fiesta Provincial del Trigo en Tres Arroyos o la Exposición Rural en Bordeu funcionan como verdaderos motores para la región, reuniendo a empresas, pymes y miles de personas con ganas de crecer y descubrir nuevas oportunidades.</p>
+                <p>Para Leones de la Bahía, estas grandes muestras regionales representan el escenario perfecto para llevar nuestra visión más allá de Bahía Blanca. Nos sumamos a estos encuentros con el firme propósito de encender la chispa emprendedora en la zona, conectando con personas proactivas y jóvenes motivados que buscan una oportunidad real para aprender a emprender, desarrollar habilidades de liderazgo y formarse en la gestión de un negocio dinámico.</p>
+                <p>A través de nuestra presencia en estos eventos clave de la región, abrimos las puertas a quienes desean salir de la rutina laboral tradicional para construir su propio camino. Para nosotros es un orgullo representar una alternativa concreta de capacitación y crecimiento, apostando fuerte por el talento local y formando a la nueva generación de emprendedores de Bahía Blanca y toda la zona.</p>
             </div>
+            <div id="IMG-Leyenda">
+                <img src="./img/LDB-FiestaDelTrigo.jpg" alt="Fiesta Provincial del Trigo 2023">
+                <p>Leones de la Bahía - Feria del Trigo | Edición 2023</p>
+            </div>
+            
             <div id="Feria">
                 <h3>Feria de empleo</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos voluptate maiores amet ullam nemo, tempore alias ipsam minus asperiores facere quo nulla accusantium distinctio molestias. Molestiae ducimus sunt sed ipsam.</p>
-                <img class="F-Img" src="./img/Img3.jpg" alt="">
-                <img src="./img/Img2.jpg" alt="">
+                <p>Las Jornadas de Empleo de la Universidad Nacional del Sur (UNS) constituyen el encuentro de empleabilidad más importante de Bahía Blanca y toda la región. Organizadas a través de la Secretaría de Cultura y Extensión Universitaria, este evento se ha consolidado como un espacio estratégico que conecta directamente el talento académico con las demandas y oportunidades del mercado laboral, reuniendo cada año a empresas de primer nivel y a cientos de estudiantes motivados por descubrir nuevos horizontes de desarrollo profesional.</p>
+                <p>En este marco de innovación y crecimiento, Leones de la Bahía tuvo el honor de formar parte de la Feria de Empleo UNS con un firme propósito: impulsar el espíritu emprendedor de la región. Durante la jornada, abrimos nuestras puertas a estudiantes avanzados y graduados apasionados por los desafíos, enfocando nuestro proceso de selección en la búsqueda de pasantes con un marcado interés por aprender a emprender, desarrollar competencias de liderazgo y conocer desde adentro la gestión de un negocio dinámico.</p>
+                <p>Nuestra participación nos permitió conectar de manera directa con jóvenes proactivos que buscan ir más allá del trabajo convencional, ofreciéndoles una experiencia práctica donde pueden capacitarse, adquirir herramientas clave de negocios y formar parte de una cultura enfocada en el crecimiento continuo. Para Leones de la Bahía, sumarnos a esta iniciativa representó una oportunidad invaluable para apostar por el talento local, brindando un entorno real de formación para las futuras generaciones de emprendedores de Bahía Blanca y la zona.</p>
             </div>
-        </div>
-
+            <div id="IMG-Feria">
+                <img class="F-Img" src="./img/Img3.jpg" alt="Feria de empleo UNS 1">
+                <img class="F-Img" src="./img/Img2.jpg" alt="Feria de empleo UNS 2">
+            </div>
+        </section>
     </main>
+
     <footer>
-        <div id="Contactos">
-            <p>hola</p>
-        </div>
+        <section id="Footer-Sup">
+            <div>
+                <h2>PODRÍA INTERESARTE</h2>
+                <ul>
+                    <li><a href="https://www.royalprestige.com/ar" target="_blank" rel="noopener">Royal Prestige</a></li>
+                    <li><a href="#">Sobre Leones de la Bahía</a></li>
+                </ul>
+            </div> 
+            <div id="Contactos">
+                <h2>CONTÁCTANOS</h2>
+                <p>Alexandra Larracoechea</p>
+                <p>Tel: <a href="tel:2914607028">291 460-7028</a></p>
+                <div id="Footer-Sup-2">
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="Footer-Inf">
+            <img src="./img/Adobe Express - file.png" alt="Logo LDB">
+            <img src="./img/Logo-RP.png" alt="Logo Royal Prestige">
+        </section>
     </footer>
+
     <script src="./js/script.js"></script>
 </body>
-
 </html>
