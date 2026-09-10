@@ -12,79 +12,106 @@ body {
 }
 
 /* Navbar */
+header {
+    position: relative;
+    z-index: 100;
+}
+
 nav {
+    margin: 0;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 #Nav-Sup {
-    padding: 0.5vh 2vw;
+    padding: 0.5rem 1rem;
     font-size: 0.8rem;
     background-color: #b5822b;
     color: #e9ddca;
-    font-family: "didact-gothic", sans-serif;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: lighter;
     text-align: right;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Nav-Sup p {
+    margin: 0;
 }
 
 #Nav-Centro {
     width: 100%;
-    height: 10vh;
-    background: #b5822b url('./img/Encabezado.jpg') center/cover no-repeat;
+    height: 8vh;
+    min-height: 40px;
+    background-color: #b5822b;
+    background-image: url(./img/background-nav.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #Nav-Inf {
-    position: relative;
-    width: 100%;
-    height: 4rem;
-    padding: 0 4rem;
+    min-height: 4.5rem;
+    padding: 0.8rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(to right, #ffffff, #FFF7EC);
+    background: linear-gradient(to right, #ffffff, #FFF7EC, #FFF7EC);
+    box-shadow: 0 8px 10px 6px rgba(107, 107, 107, 0.2);
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 #Nav-Inf-Iz {
-    position: relative;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding-left: 9rem;
+    gap: 15px;
 }
 
 #Nav-Inf img {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8rem;
-    height: 8rem;
     border-radius: 50%;
-    z-index: 20;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    height: 4.5rem;
+    width: 4.5rem;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 2px rgba(77, 77, 77, 0.3);
+    flex-shrink: 0;
 }
 
 #Nav-Inf h2 {
     font-size: 1.25rem;
+    margin: 0;
     font-family: "Cinzel", serif;
-    background: linear-gradient(135deg, #cea243, #976114);
+    background: radial-gradient(circle at center, #cea243, #976114);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-shadow: 0 0 10px rgba(107, 107, 107, 0.2);
 }
 
 #Nav-Inf-De {
-    list-style: none;
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #6e3b0c;
+}
+
+#Nav-Inf-De ul {
     display: flex;
     gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
 #Nav-Inf-De a {
+    font-size: 0.95rem;
     text-decoration: none;
-    color: #6e3b0c;
-    font-weight: bold;
-    font-size: 0.9rem;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+#Nav-Inf-De a:hover {
+    color: #b5822b;
 }
 
 /* SECCIÓN 1: HERO (Fondo 1) */
@@ -247,59 +274,111 @@ nav {
     padding: 0;
 }
 
-/* ESTILO DE LAS TARJETAS */
-.grid-info>div {
-    background-color: #ffffff !important;
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+/*TARJETAS*/
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
-/* CUERPO Y TEXTO DE LAS TARJETAS */
-.grid-info .card-body {
-    background-color: #ffffff !important;
-    padding: 1.25rem;
-    text-align: center;
+/* Outer wrapper reserves fixed layout space */
+.card {
+  width: 220px;
+  height: 140px;
+  position: relative; /* Anchor for absolute positioning */
 }
 
-.grid-info .card-text {
-    color: #2d3748 !important;
-    font-weight: 600;
+/* Inner card handles visual styles and expansion */
+.card-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  z-index: 1;
+  overflow: hidden;
 }
 
-.card-competencia,
-.card-Precio,
-.card-DiasHoras,
-.card-NivelRequerido {
-    background: linear-gradient(135deg, #e6c885, #b5822b);
-    border-radius: 8px;
-    overflow: hidden;
-    /* Asegura que las esquinas no sobresalgan */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+#card-comp{
+    background: linear-gradient(to right, #ffe98e, white);
+}
+#card-comp h3{
+    color: #e2cf7f;
 }
 
-/* Hacer el cuerpo de las tarjetas blanco con texto oscuro */
-.card-body {
-    background-color: #ffffff !important;
-    color: #333333 !important;
-    padding: 1rem;
-    text-align: center;
+#card-comp p{
+    color: #c9a92a;
 }
 
-.card-text {
-    color: #333333 !important;
-}
 
-.grid-info div {
-    background: linear-gradient(135deg, #e6c885, #b5822b);
-    color: #ffffff;
-    padding: 1rem;
-    text-align: center;
+#card-precios{
+    background-color: white;
+}
+#card-precios h3{
+    background: radial-gradient(circle at center, #cea243, #976114);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     font-weight: bold;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#card-precios p{
+    color: #c9a92a;
+}
+
+
+#card-DyH{
+    background: linear-gradient(to right, #b5822b, #fcffea);
+}
+#card-DyH h3{
+    color: #6e3b0c;
+    font-weight: bold;
+}
+
+#card-DyH p{
+    color: #472404;
+}
+
+
+#card-nivel{
+    background: linear-gradient(to right, #d97c00, #c97138, #8b310a);
+}
+#card-nivel h3{
+    color: #6e3b0c;
+}
+
+#card-nivel p{
+    color: white;
+}
+
+
+/* Description initially hidden */
+.description {
+  opacity: 0;
+  transition: opacity 0.2s ease, max-height 0.3s ease;
+}
+
+/* Expanded state on hover */
+.card:hover .card-inner {
+  width: 280px;
+  height: fit-content;
+  transform: translate(-30px, -20px); /* Center expansion relative to grid space */
+  z-index: 10; /* Brings card above neighboring elements */
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+  background-color: #2b2b36;
+}
+
+.card:hover .description {
+  opacity: 1;
+  max-height: 150px;
+  margin-top: 12px;
 }
 
 /* SECCIÓN 3: INFORMACIÓN Y CONTACTO */
@@ -420,6 +499,83 @@ nav {
     color: rgba(0, 0, 0, 0.8);
     margin: 0;
 }
+
+footer {
+    background-color: #111111;
+    padding: 3rem 5% 2rem 5%;
+    color: #b0b0b0;
+}
+
+#Footer-Sup {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Footer-Sup h2 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#Footer-Sup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Footer-Sup li {
+    margin-bottom: 0.5rem;
+}
+
+#Footer-Sup a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#Footer-Sup a:hover {
+    color: #ffcd67;
+}
+
+#Footer-Sup-2 {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 2rem;
+}
+
+#Footer-Sup-2 a {
+    color: #b0b0b0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#Footer-Sup-2 a:hover {
+    color: #ffcd67;
+    transform: translateY(-3px);
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 2.5rem 0;
+}
+
+#Footer-Inf {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    height: 5rem;
+    width: auto;
+    object-fit: contain;
+}
+
 
 /* ADAPTACIÓN A PANTALLAS PEQUEÑAS (MÓVILES) */
 @media (max-width: 600px) {
