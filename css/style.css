@@ -1,0 +1,529 @@
+/* ==========================================
+   RESET & GLOBAL STYLES
+   ========================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: radial-gradient(circle at center, #93672a, #cf9b45, #ffcd67);
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ==========================================
+   HEADER & NAVIGATION
+   ========================================== */
+header {
+    position: relative;
+    z-index: 100;
+}
+
+nav {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#Nav-Sup {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    background-color: #b5822b;
+    color: #e9ddca;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: lighter;
+    text-align: right;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#Nav-Sup p {
+    margin: 0;
+}
+
+#Nav-Centro {
+    width: 100%;
+    height: 8vh;
+    min-height: 40px;
+    background-color: #b5822b;
+    background-image: url(../img/background-nav.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#Nav-Inf {
+    min-height: 4.5rem;
+    padding: 0.8rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ffffff, #FFF7EC, #FFF7EC);
+    box-shadow: 0 8px 10px 6px rgba(107, 107, 107, 0.2);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#Nav-Inf-Iz {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#Nav-Inf img {
+    border-radius: 50%;
+    height: 4.5rem;
+    width: 4.5rem;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 2px rgba(77, 77, 77, 0.3);
+    flex-shrink: 0;
+}
+
+#Nav-Inf h2 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-family: "Cinzel", serif;
+    background: radial-gradient(circle at center, #cea243, #976114);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(107, 107, 107, 0.2);
+}
+
+#Nav-Inf-De {
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    color: #6e3b0c;
+}
+
+#Nav-Inf-De ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#Nav-Inf-De a {
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+#Nav-Inf-De a:hover {
+    color: #b5822b;
+}
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+
+/* --- Introduction Section --- */
+#Main-Introduccion {
+    min-height: 70vh;
+    margin: 0 auto;
+    padding: 3rem 5%;
+    background-image: url(../img/Fondo-Introduccion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+#Contenedor-Biografia {
+    flex: 1 1 450px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#Contenedor-Biografia h1 {
+    margin-top: 0;
+    color: #6e3b0c;
+    font-family: "Cinzel", serif;
+}
+
+#Contenedor-Galeria {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.Intro-Img {
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px 2px rgba(77, 77, 77, 0.3);
+}
+
+/* --- Middle Section (Misión, Visión, Ubicación) --- */
+#Main-Medio {
+    padding: 3rem 5%;
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Main-Medio h3 {
+    color: #6e3b0c;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#Main-Medio hr.divider {
+    border: none;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right, #6e3b0c, #976114, #ffcd67);
+    margin-bottom: 2rem;
+}
+
+#MisionVision {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#Mision, #Vision {
+    width: 100%;
+}
+
+#Mision h4, #Vision h4 {
+    color: #6e3b0c;
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.MV-P {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #4a2707;
+}
+
+.MV-Img {
+    width: 100%;
+    justify-self: center;
+    object-fit: contain;
+}
+
+#M-Img {
+    max-height: 12rem;
+    width: auto;
+}
+
+#V-Img {
+    max-height: 12rem;
+    width: auto;
+    border-radius: 8px;
+}
+
+#Mision { grid-column: 1 / 2; grid-row: 1 / 2; }
+#M-Img  { grid-column: 2 / 3; grid-row: 1 / 2; }
+#V-Img  { grid-column: 1 / 2; grid-row: 2 / 3; }
+#Vision { grid-column: 2 / 3; grid-row: 2 / 3; }
+
+/* Interactive Map Viewport */
+.image-viewport {
+    width: 100%;
+    max-width: 500px;
+    height: 320px;
+    overflow: hidden;
+    position: relative;
+    cursor: grab;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    touch-action: none;
+}
+
+.image-viewport img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    max-width: none;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.05s ease-out;
+}
+
+/* --- Last Section (Eventos & Feria) --- */
+#Main-Ultimo {
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.95);
+    background-image: url(../img/WhiteBlob2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 5%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+#Main-Ultimo h3 {
+    font-size: 1.8rem;
+    color: #6e3b0c;
+    margin-top: 0;
+}
+
+#Main-Ultimo p {
+    line-height: 1.6;
+    color: #333;
+}
+
+#IMG-Leyenda {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+}
+
+#IMG-Leyenda img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5rem;
+}
+
+#Feria {
+    margin-top: 3rem;
+}
+
+#IMG-Feria {
+    margin: 2rem auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.F-Img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    background-color: #111111;
+    padding: 3rem 5% 2rem 5%;
+    color: #b0b0b0;
+}
+
+#Footer-Sup {
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#Footer-Sup h2 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+#Footer-Sup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#Footer-Sup li {
+    margin-bottom: 0.5rem;
+}
+
+#Footer-Sup a {
+    color: #b0b0b0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#Footer-Sup a:hover {
+    color: #ffcd67;
+}
+
+#Footer-Sup-2 {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 2rem;
+}
+
+#Footer-Sup-2 a {
+    color: #b0b0b0;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#Footer-Sup-2 a:hover {
+    color: #ffcd67;
+    transform: translateY(-3px);
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 2.5rem 0;
+}
+
+#Footer-Inf {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer img {
+    height: 5rem;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ==========================================
+   RESPONSIVE MEDIA QUERIES (MOBILE / TABLETS)
+   ========================================== */
+
+/* Tablets & Mobile Screens (<= 768px) */
+@media (max-width: 768px) {
+    #Nav-Sup {
+        text-align: center;
+    }
+
+    #Nav-Inf {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    #Nav-Inf-Iz {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #Nav-Inf img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    #Nav-Inf-De ul {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #Main-Introduccion {
+        padding: 2rem 4%;
+    }
+
+    #Contenedor-Biografia {
+        padding: 1.5rem;
+    }
+
+    .Intro-Img {
+        height: 7rem;
+        width: 7rem;
+    }
+
+    #Main-Medio {
+        width: 92%;
+        margin: 2rem auto;
+        padding: 2rem 4%;
+    }
+
+    #MisionVision {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    #Mision { grid-column: 1; grid-row: 1; }
+    #M-Img  { grid-column: 1; grid-row: 2; height: 7rem; margin: 0 auto; }
+    #Vision { grid-column: 1; grid-row: 3; }
+    #V-Img  { grid-column: 1; grid-row: 4; height: auto; max-width: 100%; margin: 0 auto; }
+
+    #Main-Ultimo {
+        width: 92%;
+        margin: 2rem auto;
+        padding: 2rem 4%;
+    }
+
+    #IMG-Feria {
+        gap: 1rem;
+    }
+
+    .F-Img {
+        max-width: 100%;
+    }
+
+    #Footer-Sup {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    #Footer-Sup-2 {
+        justify-content: center;
+    }
+}
+
+/* Small Mobile Screens (<= 480px) */
+@media (max-width: 480px) {
+    #Nav-Inf h2 {
+        font-size: 1.1rem;
+    }
+
+    #Main-Medio h3, #Main-Ultimo h3 {
+        font-size: 1.4rem;
+    }
+
+    .Intro-Img {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+
+    .image-viewport {
+        height: 250px;
+    }
+}
