@@ -362,6 +362,7 @@ nav {
 /* Description initially hidden */
 .description {
   opacity: 0;
+  max-height: 0;
   transition: opacity 0.2s ease, max-height 0.3s ease;
 }
 
@@ -369,15 +370,15 @@ nav {
 .card:hover .card-inner {
   width: 280px;
   height: fit-content;
-  transform: translate(-30px, -20px); /* Center expansion relative to grid space */
-  z-index: 10; /* Brings card above neighboring elements */
+  transform: translate(-30px, -20px);
+  z-index: 10;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
   background-color: #2b2b36;
 }
 
 .card:hover .description {
   opacity: 1;
-  max-height: 150px;
+  max-height: none;
   margin-top: 12px;
 }
 
@@ -404,6 +405,7 @@ nav {
 
 /* EXPERIENCIA PERSONAL */
 .experiencia-personal {
+    padding: 2.5rem;
     background-color: #000;
     width: 100%;
     max-width: 700px;
