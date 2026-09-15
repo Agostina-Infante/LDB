@@ -411,6 +411,7 @@ nav {
     max-width: 700px;
     text-align: center;
     color: #ffffff;
+    margin: 4px;
 }
 
 .experiencia-personal h3 {
@@ -480,11 +481,20 @@ nav {
     backdrop-filter: blur(4px);
 }
 
+.foto-Direccion {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: url(./img/Ale.PNG) center/cover no-repeat; 
+    border: 2px solid #ffffff;
+    flex-shrink: 0;
+}
+
 .foto-socio {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background-color: #d1a145;
+    background: url(./img/Adobe\ Express\ -\ file.png) center/cover no-repeat; 
     border: 2px solid #ffffff;
     flex-shrink: 0;
 }
@@ -593,7 +603,7 @@ footer img {
 }
 
 .opcion h2 {
-    font-weight: light;
+    font-weight: 300;
     font-size: small;
 }
 
