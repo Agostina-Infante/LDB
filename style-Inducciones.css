@@ -118,7 +118,7 @@ nav {
 .hero-section {
     position: relative;
     min-height: 85vh;
-    background: url('./img/fondo1.jpg') center/cover no-repeat;
+    background: url('./img-Inducciones/fondo1.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -148,7 +148,7 @@ nav {
 /* SECCIÓN 2: CURSO (Fondo Oscuro) */
 .curso-section {
     position: relative;
-    background: url('./img/Fondo2.jpg') center/cover no-repeat;
+    background: url('./img-Inducciones/Fondo2.jpg') center/cover no-repeat;
     padding: 0 15% 4rem 15%;
     /* Quitamos padding superior para alinear el cartel arriba */
     display: flex;
@@ -232,7 +232,7 @@ nav {
 
 /* SECCIÓN 3: COMPENSACIÓN DE ESPACIO */
 .info-section {
-    background: url('./img/fondo3.png') center/cover no-repeat;
+    background: url('./img-Inducciones/fondo3.png') center/cover no-repeat;
     padding: 10rem 10% 5rem 10%;
     /* Subimos a 10rem para alejarlo de la barra blanca */
     display: flex;
@@ -384,7 +384,7 @@ nav {
 
 /* SECCIÓN 3: INFORMACIÓN Y CONTACTO */
 .info-section {
-    background: url('./img/fondo3.png') center/cover no-repeat;
+    background: url('./img-Inducciones/fondo3.png') center/cover no-repeat;
     padding: 10rem 10% 5rem 10%;
     display: flex;
     flex-direction: column;
@@ -485,7 +485,7 @@ nav {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background: url(./img/Ale.PNG) center/cover no-repeat; 
+    background: url(./img-Inducciones/Ale.PNG) center/cover no-repeat; 
     border: 2px solid #ffffff;
     flex-shrink: 0;
 }
@@ -494,7 +494,7 @@ nav {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    background: url(./img/Adobe\ Express\ -\ file.png) center/cover no-repeat; 
+    background: url(./img-Inducciones/Adobe\ Express\ -\ file.png) center/cover no-repeat; 
     border: 2px solid #ffffff;
     flex-shrink: 0;
 }
